@@ -123,41 +123,6 @@ Tools ini tidak otomatis mencari endpoint. Anda perlu menyediakan file endpoints
    curl https://target.com/swagger.json | jq '.paths | keys[]' > endpoints.txt
 
 ---
-
-Daftar Klasifikasi Endpoint
-
-LOGIN_FORM: Halaman login dengan form (High)
-API_ENDPOINT: REST API / GraphQL (High)
-FILE_UPLOAD: Endpoint upload file (High)
-ADMIN_PANEL: Panel admin (High)
-DASHBOARD_LANDING: Dashboard/user panel (Medium)
-SEARCH_FUNCTION: Fitur pencarian (Medium)
-JSON_RESPONSE: API JSON response (Medium)
-REDIRECT_TO_LOGIN: Redirect ke login (Low)
-BLANK_SCREEN: Halaman kosong (Low)
-NOT_FOUND: 404 - tidak ditemukan (Low)
-STATIC_FILE: CSS/JS/images (Low)
-
----
-
-Struktur Project
-
-endpoint_scanner/
-├── endpoint_scanner.py    # Main script
-├── README.md              # Dokumentasi
-├── requirements.txt       # Dependencies
-├── examples/
-│   └── endpoints.txt      # Contoh file endpoints
-└── .gitignore             # Abaikan hasil scan
-
----
-
-Lisensi
-
-MIT License - Bebas digunakan, dimodifikasi, dan didistribusikan.
-
----
-
 Author
 
 Narathama Firmansyah Putra
